@@ -1,0 +1,35 @@
+body{
+    background-color:rgb(42, 28, 49);
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+#div0 {
+    position: absolute;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    background-color:lavender;
+    width: 40%;
+    height: 60%;
+    margin-left: 7%;
+    margin-top: 50px;
+}
+#div1 {
+    position: absolute;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    background-color:lavenderblush;
+    width: 40%;
+    height: 60%;
+    margin-left: 50%;
+    margin-top: 50px;
+}
+#span {
+    position: fixed;
+    display: block;
+    background-color: rgb(123, 161, 123);
+    border: 1px, solid, black;
+    padding: 5px;
+}
