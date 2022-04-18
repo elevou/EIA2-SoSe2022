@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="memorySettings.css" type="text/css">
+    <script src="memorySettings.js" type="text/javascript"></script></head>
+<body>
+    <header>
+        <h1>Memory</h1>    
+    </header>
+
+    <h2 id="timer">00:00</h2>
+
+    <div id="wrapper"> </div>
+    
+    <form  id="form">
+        <fieldset>
+            <legend>Number of pairs</legend>
+            <input type="number" name="CardPairAmount" id="inputCardAmount" min="5" max="25" step="1" value="5">
+        </fieldset> 
+
+        <fieldset>
+            <legend>Size of cards</legend>
+            50px
+            <input type="range" name="CardSize" id="cardSize" min="50" max="100" value="75" step="1">
+            100px
+        </fieldset> 
+           
+        <fieldset>
+            <legend>Background color: </legend>
+            <input type="color" name="Background" id="background" value="#DDCAE8">
+        </fieldset>
+
+        <fieldset>
+            <legend>Card color: </legend>
+            <input type="color" name="CardBackgroundColor" id="cardBack" value="#3F3565">
+        </fieldset>
+
+        <fieldset>
+            <legend>Font color: </legend>
+            <input type="color" name="FontColor" id="fontColor" value="#FFFFFF">
+        </fieldset>
+            
+        <fieldset>
+            <legend>Font</legend>
+            <select name="Font" id="font">
+                <option selected>Verdana</option>
+                <option>Sans-Serif</option>
+                <option>Arial</option>
+                <option>Franklin Gothic</option>
+            </select>
+        </fieldset>
+        <br>
+        <button id="startBtn" type="submit">Start</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    justify-content: center; 
+    align-items: center;
+    display: grid;
+}
+span {
+    position: absolute;
+    font-size: 35px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#wrapper > div {
+    position: relative;
+    margin: auto;
+}
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    border: none;
+}
+#inputCardAmount, #font {
+    text-align:  center;
+    padding: 5px;
+    margin: auto;
+}
+#timer {
+    top: 0%;
+    left: 5%;
+    position: absolute;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    visibility: hidden;
+}
