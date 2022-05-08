@@ -1,4 +1,3 @@
-"use strict";
 /**
  * Aufgabe: L08.1_GenerativeKunst
  * Name: Elena Maria Voulgaridis
@@ -72,3 +71,4 @@ var L08_GenerativeKUnst;
         }
     }
 })(L08_GenerativeKUnst || (L08_GenerativeKUnst = {}));
+//# sourceMappingURL=GenerativeKunst.js.map
