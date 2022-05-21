@@ -1,0 +1,30 @@
+*{
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+body{
+    border: 10px solid rgb(54, 70, 56);
+    background-color: rgb(226, 226, 226);
+}
+.imageBox{
+    padding: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(216, 216, 151);
+    margin-top: 10%;
+
+}
+.songBox{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 2%;
+    background-color: rgb(216, 216, 151);
+}
+.storageBox{
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 2%;
+    background-color: rgb(183, 183, 127);
+}
