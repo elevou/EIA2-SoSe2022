@@ -20,11 +20,12 @@ namespace L09_OldMacDonaldsFarm {
         startBtn.addEventListener("click", farmSettings);
     }
     
-    function farmSettings(_event: Event): void {
+    function farmSettings(): void {
         startBtn.remove();
      
         let foodList: string[] = ["wheat", "seed", "hay", "grass", "carrots", "grain", "cheese"];
         let soundList: string[] = ["moo", "gack", "neigh", "meeh", "oink", "baah", "wuff"];
+       
         let cow: Animal = new Animal("Anna", "cow", foodList[0], setRandomNumber(1, 4), setRandomNumber(5, 15), soundList[0]);
         let chicken: Animal = new Animal("Berta", "chicken", foodList[1], setRandomNumber(1, 4), setRandomNumber(5, 15), soundList[1]);
         let horse: Animal = new Animal("Clara", "horse", foodList[2], setRandomNumber(1, 4), setRandomNumber(5, 15), soundList[2]);

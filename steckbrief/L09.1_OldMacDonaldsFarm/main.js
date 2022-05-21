@@ -18,7 +18,7 @@ var L09_OldMacDonaldsFarm;
         document.body.appendChild(startBtn);
         startBtn.addEventListener("click", farmSettings);
     }
-    function farmSettings(_event) {
+    function farmSettings() {
         startBtn.remove();
         let foodList = ["wheat", "seed", "hay", "grass", "carrots", "grain", "cheese"];
         let soundList = ["moo", "gack", "neigh", "meeh", "oink", "baah", "wuff"];

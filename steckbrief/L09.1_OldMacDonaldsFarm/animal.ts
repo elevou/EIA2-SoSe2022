@@ -8,8 +8,6 @@
 namespace L09_OldMacDonaldsFarm {
     
     export class Animal {
-
-
         name: string;
         image: string;
         species: string;
