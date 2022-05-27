@@ -10,6 +10,7 @@ var strand;
         canvas = document.querySelector("canvas");
         strand.crc2 = canvas.getContext("2d");
         resizeCanvas();
+        alert("If you resize the window, you need to refresh the site! :)");
         draw();
         createSeagull(4);
         createCloud(5);
