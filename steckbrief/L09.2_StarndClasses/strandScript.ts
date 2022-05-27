@@ -10,6 +10,7 @@ namespace strand {
     function handleLoad(_event: Event): void {
         canvas = document.querySelector("canvas");
         crc2 = <CanvasRenderingContext2D> canvas.getContext("2d")!;
+        alert("If you resize the window, you need to refresh the site! :)");
         resizeCanvas();
         draw();
         createSeagull(4);
