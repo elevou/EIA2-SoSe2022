@@ -2,12 +2,12 @@ var strand;
 (function (strand) {
     class Seagull {
         position;
-        valocity;
+        velocity;
         scalenumber;
         constructor() {
             this.position = new strand.Vector(0, 0);
-            this.valocity = new strand.Vector(0, 0);
-            this.valocity.random(300, 200);
+            this.velocity = new strand.Vector(0, 0);
+            this.velocity.random(300, 200);
         }
         drawSeagull() {
             let scale = (this.scalenumber);
@@ -23,7 +23,7 @@ var strand;
             strand.crc2.restore();
         }
         animate(_timeslice) {
-            let offset = new strand.Vector(this.valocity.x, this.valocity.y);
+            let offset = new strand.Vector(this.velocity.x, this.velocity.y);
             offset.scale(_timeslice);
             this.position.add(offset);
             if (this.position.x < 0) {
@@ -32,10 +32,12 @@ var strand;
             if (this.position.x > strand.crc2.canvas.width) {
                 this.position.x -= strand.crc2.canvas.width;
             }
-            if (this.position.y < 0)
+            if (this.position.y < 0) {
                 this.position.y += strand.crc2.canvas.height;
-            if (this.position.y > strand.crc2.canvas.height)
+            }
+            if (this.position.y > strand.crc2.canvas.height) {
                 this.position.y -= strand.crc2.canvas.height;
+            }
         }
     }
     strand.Seagull = Seagull;

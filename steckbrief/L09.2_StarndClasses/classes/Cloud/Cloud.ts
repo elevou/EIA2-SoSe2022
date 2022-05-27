@@ -1,14 +1,14 @@
 namespace strand {
     export class Cloud {
         position: Vector;
-        valocity: Vector;
+        velocity: Vector;
         type: number;
         random: number;
         
         constructor(_random: number) {
         this.position = new Vector(0, 0); 
-        this.valocity = new Vector(0, 0); 
-        this.valocity.random(300, 200); 
+        this.velocity = new Vector(0, 0); 
+        this.velocity.random(300, 200); 
         this.random = _random;
         }    
 
@@ -36,7 +36,7 @@ namespace strand {
         }
         
         animate(_timeslice: number): void {
-            let offset: Vector = new Vector(this.valocity.x, 0);
+            let offset: Vector = new Vector(this.velocity.x, 0);
             offset.scale(_timeslice);
             this.position.add(offset);
             

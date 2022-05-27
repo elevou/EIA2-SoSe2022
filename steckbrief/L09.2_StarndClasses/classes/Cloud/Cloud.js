@@ -2,13 +2,13 @@ var strand;
 (function (strand) {
     class Cloud {
         position;
-        valocity;
+        velocity;
         type;
         random;
         constructor(_random) {
             this.position = new strand.Vector(0, 0);
-            this.valocity = new strand.Vector(0, 0);
-            this.valocity.random(300, 200);
+            this.velocity = new strand.Vector(0, 0);
+            this.velocity.random(300, 200);
             this.random = _random;
         }
         drawCloud() {
@@ -33,7 +33,7 @@ var strand;
             strand.crc2.restore();
         }
         animate(_timeslice) {
-            let offset = new strand.Vector(this.valocity.x, 0);
+            let offset = new strand.Vector(this.velocity.x, 0);
             offset.scale(_timeslice);
             this.position.add(offset);
             if (this.position.x < 0) {

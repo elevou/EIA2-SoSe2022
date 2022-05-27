@@ -1,19 +1,19 @@
 var strand;
 (function (strand) {
     class Sand {
-        positionX1;
-        positionY1;
-        positionX2;
-        positionY2;
-        constructor(_positionX1, _positionY1, _positionX2, _positionY2) {
-            this.positionX1 = _positionX1;
-            this.positionY1 = _positionY1;
-            this.positionX2 = _positionX2;
-            this.positionY2 = _positionY2;
+        x;
+        y;
+        x2;
+        y2;
+        constructor(_x, _y, _x2, _y2) {
+            this.x = _x;
+            this.y = _y;
+            this.x2 = _x2;
+            this.y2 = _y2;
         }
         drawSand() {
             strand.crc2.beginPath();
-            strand.crc2.bezierCurveTo(0, this.positionX1, this.positionY1, 800, this.positionX2, this.positionY2);
+            strand.crc2.bezierCurveTo(0, this.x, this.y, 800, this.x2, this.y2);
             strand.crc2.lineTo(strand.crc2.canvas.width, strand.crc2.canvas.height);
             strand.crc2.lineTo(0, strand.crc2.canvas.height);
             strand.crc2.closePath();

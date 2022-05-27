@@ -2,15 +2,15 @@ var strand;
 (function (strand) {
     class Surfer {
         position;
-        valocity;
+        velocity;
         color1;
         color2;
         color3;
         color4;
         constructor(_color1, _color2, _color3, _color4) {
             this.position = new strand.Vector(0, strand.crc2.canvas.height * 0.5);
-            this.valocity = new strand.Vector(0, 0);
-            this.valocity.random(300, 200);
+            this.velocity = new strand.Vector(0, 0);
+            this.velocity.random(300, 200);
             this.color1 = _color1;
             this.color2 = _color2;
             this.color3 = _color3;
@@ -85,7 +85,7 @@ var strand;
             strand.crc2.restore();
         }
         animate(_timeslice) {
-            let offset = new strand.Vector(this.valocity.x, 0);
+            let offset = new strand.Vector(this.velocity.x, 0);
             offset.scale(_timeslice);
             this.position.add(offset);
             if (this.position.x < -250) {

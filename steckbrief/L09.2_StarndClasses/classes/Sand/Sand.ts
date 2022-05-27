@@ -1,20 +1,20 @@
 namespace strand {
     export class Sand {
-        positionX1: number;
-        positionY1: number;
-        positionX2: number;
-        positionY2: number;
+        x: number;
+        y: number;
+        x2: number;
+        y2: number;
 
-        constructor(_positionX1: number, _positionY1: number, _positionX2: number, _positionY2: number) {
-            this.positionX1 = _positionX1;
-            this.positionY1 = _positionY1;
-            this.positionX2 = _positionX2;
-            this.positionY2 = _positionY2;
+        constructor(_x: number, _y: number, _x2: number, _y2: number) {
+            this.x = _x;
+            this.y = _y;
+            this.x2 = _x2;
+            this.y2 = _y2;
         }
 
         drawSand(): void {
             crc2.beginPath();
-            crc2.bezierCurveTo(0, this.positionX1, this.positionY1, 800, this.positionX2, this.positionY2);
+            crc2.bezierCurveTo(0, this.x, this.y, 800, this.x2, this.y2);
             crc2.lineTo(crc2.canvas.width, crc2.canvas.height);
             crc2.lineTo(0, crc2.canvas.height);
             crc2.closePath();

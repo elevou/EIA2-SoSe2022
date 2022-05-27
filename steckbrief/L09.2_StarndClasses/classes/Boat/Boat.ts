@@ -1,15 +1,15 @@
 namespace strand {
     export class Boat {
         position: Vector;
-        valocity: Vector;
+        velocity: Vector;
         color1: string;
         color2: string;
         color3: string;
 
         constructor( _color1: string, _color2: string, _color3: string) {
             this.position = new Vector(0, crc2.canvas.height * 0.1); 
-            this.valocity = new Vector(0, 0); 
-            this.valocity.random(300, 200); 
+            this.velocity = new Vector(0, 0); 
+            this.velocity.random(300, 200); 
             this.color1 = _color1;
             this.color2 = _color2;
             this.color3 = _color3;
@@ -63,7 +63,7 @@ namespace strand {
             crc2.restore();
         }
         animate (_timeslice: number): void {
-            let offset: Vector = new Vector(this.valocity.x, 0);
+            let offset: Vector = new Vector(this.velocity.x, 0);
             offset.scale(_timeslice);
             this.position.add(offset);
             
