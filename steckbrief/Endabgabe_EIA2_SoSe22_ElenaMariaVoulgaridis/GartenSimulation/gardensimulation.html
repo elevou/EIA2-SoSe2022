@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GardenSimulation</title>
+
+    <script src="classes/Bug/Bug.js"></script>
+    <script src="classes/Plant/Plant.js"></script>
+    <script src="classes/Field/Field.js"></script>
+    <script src="classes/Player/Player.js"></script>
+    <script src="classes/Ananas/Ananas.js"></script>
+    <script src="classes/Blueberry/Blueberry.js"></script>
+    <script src="classes/Melon/Melon.js"></script>
+    <script src="classes/Raspberry/Raspberry.js"></script>
+    <script src="classes/Strawberry/Strawberry.js"></script>
+    <script src="classes/Load/load.js"></script>
+    <script src="main.js"></script>
+</head>
+<header>
+    <h1>GardenSimulation</h1>
+</header>
+<body>
+    <form id="settings">
+        <h2>Settings</h2>
+        <fieldset id="capital">
+            <label for="capital">Capital</label>
+            <input type="number" name="capital" min="100" max="1000" step="10" value="100"> <br>
+        </fieldset>
+        <fieldset id="schwankung">
+            <label for="schwankung">Price fluctuation</label>
+            <input type="number" name="schwankung" min="5" max="20" step="1" value="5"> <br>
+        </fieldset>
+        <button type="button" id="startButton">Start Game</button>
+    </form>
+    <div id="gameField">
+        <canvas></canvas>
+        <button id="s1" value="seed1">Ananas <span id="ananasAmount"></span></button>
+        <button id="s2" value="seed2">Blueberry <span id="blueberryAmount"></span></button>
+        <button id="s3" value="seed3">Raspberry <span id="melonAmount"></span></button>
+        <button id="s4" value="seed4">Melon <span id="raspberryAmount"></span></button>
+        <button id="s5" value="seed5">Strawberry <span id="strawberryAmount"></span></button>
+        <button id="h">Harvest</button>
+        <button id="w">Water</button>
+        <button id="f">Fertilize <span id="fertilizeAmount"></span></button></button>
+        <button id="p">Pesticide <span id="pesticideAmount"></span></button>
+        <span id="money">Money: 0 €</span>
+
+        <div id="markt">
+            <button id="buyAnanas" value="buy1">buy Ananas <span id="ananasPrice"></span></button> 
+            <button id="buyBlueberry" value="buy2"> buy Blueberries <span id="blueberryPrice"></span></button> 
+            <button id="buyMelon" value="buy3"> buy Melon <span id="melonPrice"></span></button>
+            <button id="buyRasberry" value="buy4">buy Raspberries <span id="raspberryPrice"></span></button>
+            <button id="buyStrawberry" value="buy5">buy Strawberries <span id="strawberryPrice"></span></button>
+            <button id="buyFertilize">Fertilize <span id="fertilizePrice"></span></button>
+            <button id="buyPesticide">Pesticide<span id="pesticidePrice"></span></button>
+        </div> 
+    </div>    
+   
+    <div id="assets">
+        <img id="bug" src="assets/bug.png" alt="bug">
+
+        <img id="water1" src="assets/dropOne.png" alt="water1">
+        <img id="water2" src="assets/dropTwo.png" alt="water2">
+        <img id="water3" src="assets/dropThree.png" alt="water3">
+        
+        <img id="fertilizer1" src="assets/fertilizerOne.png" alt="fertilizer1">
+        <img id="fertilizer2" src="assets/fertilizerTwo.png" alt="fertilizer2">
+        <img id="fertilizer3" src="assets/fertilizerThree.png" alt="fertilizer3">
+
+        <img id="ananasS" src="assets/ananasOne.png" alt="ananasS">
+        <img id="ananasM" src="assets/ananasTwo.png" alt="ananasM">
+        <img id="ananasB" src="assets/ananasThree.png" alt="ananasB">
+
+        <img id="blueberryS" src="assets/blueberryOne.png" alt="blueberryS">
+        <img id="blueberryM" src="assets/blueberryTwo.png" alt="blueberryM">
+        <img id="blueberryB" src="assets/blueberryThree.png" alt="blueberryB">
+
+        <img id="melonS" src="assets/melonOne.png" alt="melonS">
+        <img id="melonM" src="assets/melonTwo.png" alt="melonM">
+        <img id="melonB" src="assets/melonThree.png" alt="melonB">
+        
+        <img id="raspberryS" src="assets/raspberryOne.png" alt="raspberryS">
+        <img id="raspberryM" src="assets/raspberryTwo.png" alt="raspberryM">
+        <img id="raspberryB" src="assets/strawberryThree.png" alt="raspberryB">
+
+        <img id="strawberryS" src="assets/strawberryOne.png" alt="strawberryS">
+        <img id="strawberryM" src="assets/strawberryTwo.png" alt="strawberryM">
+        <img id="strawberryB" src="assets/strawberryThree.png" alt="strawberryB">
+
+        <img id="empty" src="assets/empty.png" alt="empty">
+    </div>
+</body>
+</html>
